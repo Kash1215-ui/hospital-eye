@@ -3,177 +3,312 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>eye hospital</title>
+  <title>Eye Hospital</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .header {
+      text-align: center;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+
+    .header .logo {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #333;
+      padding: 5px 10px;
+    }
+
+    .text {
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #007BFF;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .img img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .main1, .main2, .main3, .vidieo {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .cudur {
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .cudur img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .main2 {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .main2 .texts {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .main2 .img {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .main3, .vidieo {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .main3 img, .vidieo video {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+      background: #333;
+      color: #fff;
+    }
+
+    .footer div {
+      margin-bottom: 20px;
+    }
+
+    .footer h1 {
+      margin-bottom: 10px;
+    }
+
+    .footer p {
+      margin-bottom: 5px;
+    }
+
+    .footer i {
+      margin-right: 10px;
+    }
+
+    .coppy {
+      text-align: center;
+      padding: 10px;
+      background: #222;
+      color: #fff;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .main2 {
+        flex-direction: column;
+      }
+
+      .main3, .vidieo {
+        flex-direction: column;
+      }
+
+      .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 
 <body>
   <header class="header">
-    <h1 class="logo"><i class="fa-regular fa-eye"></i> eye center</h1>
+    <h1 class="logo"><i class="fa-regular fa-eye"></i> Eye Center</h1>
     <nav class="navbar">
-      <a href="#home">home</a>
-      <a href="#book appointment">book appointment</a>
-      <a href="#treatments">treatments</a>
-      <a href="#about us">about us</a>g
-      <a href="#gallery">gallery</a>
-      <a href="#videos">videos</a>
+      <a href="#home">Home</a>
+      <a href="#book-appointment">Book Appointment</a>
+      <a href="#treatments">Treatments</a>
+      <a href="#about-us">About Us</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#videos">Videos</a>
     </nav>
     <div class="text">
-      <h1>providing your eye care</h1>
-      <h2>by professionals</h2>
-      <a href="#book appointment" class="btn" id="book appointment">book appointment</a>
+      <h1>Providing Your Eye Care</h1>
+      <h2>By Professionals</h2>
+      <a href="#book-appointment" class="btn" id="book-appointment">Book Appointment</a>
     </div>
     <div class="img">
       <img src="imges/bakround.jpg" alt="">
     </div>
   </header>
-  <h1>treatments</h1>
+
+  <h1>Treatments</h1>
   <div class="main1" id="treatments">
     <div class="cudur">
       <img src="imges/cudur1.jpeg" alt="">
-      <h1>cataract treatment</h1>
-      <p>we are widely recognized for excellence in probiding
-        cataract treatment & surgery.
-        with successful cataract treatment your vision will be clearer
-        ,brighter and sharper just like before eye makes. Depending on how low your eye pressure needs to be..
-      </p>
-      <a href="#" class="btn">enquire now</a>
+      <h1>Cataract Treatment</h1>
+      <p>We are widely recognized for excellence in providing cataract treatment & surgery. With successful cataract treatment, your vision will be clearer, brighter, and sharper just like before.</p>
+      <a href="#" class="btn">Enquire Now</a>
     </div>
 
     <div class="cudur">
       <img src="imges/cudur2.avif" alt="">
-      <h1>cornea treatment</h1>
-      <p>eratitis is a medical term for inflammation of the cornea.
-        rapid onset of pain and redness of the eye, itching, blurred vision, tearing or discharge from the eye, and
-        sensitivity to light fluid your eye makes. Depending on how low your eye pressure needs to be.
-      </p>
-      <a href="#" class="btn">enquire now</a>
+      <h1>Cornea Treatment</h1>
+      <p>Keratitis is a medical term for inflammation of the cornea. Symptoms include rapid onset of pain, redness, itching, blurred vision, tearing, and sensitivity to light.</p>
+      <a href="#" class="btn">Enquire Now</a>
     </div>
 
     <div class="cudur">
       <img src="imges/cudur3.jpg" alt="">
-      <h1>glaucoma treatment</h1>
-      <p>Glaucoma treatment often starts with prescription eye drops. Some may decrease eye pressure by improving how
-        fluid drains from your eye. Others decrease the amount of fluid your eye makes. Depending on how low your eye
-        pressure needs to be.
-      </p>
-      <a href="#" class="btn">enquire now</a>
+      <h1>Glaucoma Treatment</h1>
+      <p>Glaucoma treatment often starts with prescription eye drops. Some decrease eye pressure by improving fluid drainage, while others reduce fluid production.</p>
+      <a href="#" class="btn">Enquire Now</a>
     </div>
 
     <div class="cudur">
       <img src="imges/cudurk5.jpg" alt="">
-      <h1>refractive surgery</h1>
-      <p>efractive surgery is a surgical procedure performed to correct the refractive error (spectacle power) of the
-        eye. It is usually done to get rid of or reduce dependence on glasses and contact lens . It can be performed in
-        a patient with stable refraction
-      </p>
-      <a href="#" class="btn">enquire now</a>
+      <h1>Refractive Surgery</h1>
+      <p>Refractive surgery corrects the refractive error (spectacle power) of the eye. It reduces dependence on glasses and contact lenses.</p>
+      <a href="#" class="btn">Enquire Now</a>
     </div>
 
     <div class="cudur">
       <img src="imges/cudurk6.jpg" alt="">
-      <h1>retina treatment</h1>
-      <p>Laser surgery can repair a retinal tear or hole. Your surgeon uses a laser to heat small pinpoints on the
-        retina. This creates scarring that usually binds the retina to the underlying tissue. Immediate.
-      </p>
-      <a href="#" class="btn">enquire now</a>
+      <h1>Retina Treatment</h1>
+      <p>Laser surgery can repair a retinal tear or hole. It creates scarring that binds the retina to the underlying tissue.</p>
+      <a href="#" class="btn">Enquire Now</a>
     </div>
 
     <div class="cudur">
       <img src="imges/cudurk7.jpg" alt="">
-      <h1>paediatric ophtalmology</h1>
-      <p>A children's eye doctor, or paediatric ophthalmologist, diagnoses, prevents, and treats diseases that affect
-        children's eyes and vision. Good eye care is essential during childhood as many visual problems.
-      </p>
-      <a href="#" class="btn">enquire now</a>
+      <h1>Paediatric Ophthalmology</h1>
+      <p>A children's eye doctor diagnoses, prevents, and treats diseases affecting children's eyes and vision.</p>
+      <a href="#" class="btn">Enquire Now</a>
     </div>
 
     <div class="cudur">
       <img src="imges/cudur7.jpeg" alt="">
-      <h1>oculoplasty treatment</h1>
-      <p>An oculoplastic procedure is a type of surgery done around the eyes. You may have this procedure to correct a
-        medical problem or for cosmetic reasons. Oculoplastic procedures are usually done by eye doctors
-        (ophthalmologists) .
-      </p>
-      <a href="#" class="btn">enquire now</a>
+      <h1>Oculoplasty Treatment</h1>
+      <p>Oculoplastic procedures are surgeries done around the eyes, either for medical or cosmetic reasons.</p>
+      <a href="#" class="btn">Enquire Now</a>
     </div>
 
     <div class="cudur">
       <img src="imges/cudurk8.jpg" alt="">
-      <h1>lasik surgery</h1>
-      <p>LASIK uses an excimer laser (an ultraviolet laser) to remove a thin layer of corneal tissue. This gives the
-        cornea a new shape so that light rays are focused clearly on the retina. LASIK causes the cornea to be thinner.
-        LASIK is an outpatient .
-      </p>
-      <a href="#" class="btn">enquire now</a>
+      <h1>LASIK Surgery</h1>
+      <p>LASIK uses an excimer laser to reshape the cornea, correcting refractive errors and reducing dependence on glasses.</p>
+      <a href="#" class="btn">Enquire Now</a>
     </div>
   </div>
+
   <div class="main2">
     <div class="texts">
-      <h2 id="about us">about us</h2>
-      Rapidly changing technology in healthcare provides better care and facilities for patients. Shubhanu Eye Hospital
-      has embraced the modern technology and advanced treatment methodologies to develop leaps and bounds. The Hospital
-      provides Cataract and Refractive services, cataract treatments, treatment for Viteo Retinal ailments, Oculoplasty
-      and Lasik services as well as Paediatric Ophthalmology. All departments are equipped with modern medical
-      facilities and managed by eminent ophthalmologists, surgeons and experienced nursing staff. Lorem ipsum dolor sit
-      amet consectetur, adipisicing elit. Eos dolores aut dignissimos consequuntur laudantium assumenda impedit et
-      nulla! Id placeat aperiam, unde qui praesentium libero dolorum ab blanditiis beatae veritatis.
+      <h2 id="about-us">About Us</h2>
+      <p>Rapidly changing technology in healthcare provides better care and facilities for patients. Shubhanu Eye Hospital has embraced modern technology and advanced treatment methodologies. We provide Cataract and Refractive services, Viteo Retinal treatments, Oculoplasty, Lasik services, and Paediatric Ophthalmology. All departments are equipped with modern medical facilities and managed by eminent ophthalmologists, surgeons, and experienced nursing staff.</p>
     </div>
     <div class="img">
-      <img src="imges/about us.jpg" alt="">
+      <img src="imges/about-us.jpg" alt="">
     </div>
   </div>
-  <h1>gallery</h1>
+
+  <h1>Gallery</h1>
   <div class="main3">
-    <img src="imges/image1.jpg" width="300px" alt="">
-    <img src="imges/image2.jpg" width="300px" alt="">
-    <img src="imges/image3.jpg" width="300px" alt="">
+    <img src="imges/image1.jpg" alt="">
+    <img src="imges/image2.jpg" alt="">
+    <img src="imges/image3.jpg" alt="">
   </div>
-  <h1>video</h1>
+
+  <h1>Videos</h1>
   <div class="vidieo">
-   
-    <video src="vedio/vedio 1.mp4" controls muted></video>
-    <video src="vedio/vedio2.mp4" controls muted></video>></video>
-    <video src="vedio/vedio3.mp4" controls muted></video>></video>
-    <video src="vedio/vedio4.mp4" controls muted></video>></video>
-    <video src="vedio/vedio5.mp4" controls muted></video>></video>
-    <video src="vedio/vedio6.mp4" controls muted></video>></video>
+    <video src="vedio/vedio1.mp4" controls muted></video>
+    <video src="vedio/vedio2.mp4" controls muted></video>
+    <video src="vedio/vedio3.mp4" controls muted></video>
+    <video src="vedio/vedio4.mp4" controls muted></video>
+    <video src="vedio/vedio5.mp4" controls muted></video>
+    <video src="vedio/vedio6.mp4" controls muted></video>
   </div>
+
   <footer class="footer">
     <div>
-      <h1 ><i class="fa-regular fa-eye"></i> eye center</h1>
-      <p>home</p>
-      <p>book appointment</p>
-      <p>treatments</p>
-      <p>about us</p>
-      <p>gallery</p>
-      <p>video</p>
+      <h1><i class="fa-regular fa-eye"></i> Eye Center</h1>
+      <p>Home</p>
+      <p>Book Appointment</p>
+      <p>Treatments</p>
+      <p>About Us</p>
+      <p>Gallery</p>
+      <p>Video</p>
     </div>
     <div>
-      <h1>contact us</h1>
+      <h1>Contact Us</h1>
       <p>+252614429103</p>
       <p>www.filsan.com</p>
-      <p>mogadisho, somali</p>
-      <p>warta nabada</p>
+      <p>Mogadishu, Somalia</p>
+      <p>Warta Nabada</p>
     </div>
     <div>
-      <h1>Top insurances</h1>
-      <p>health net</p>
-      <p>health smarth</p>
-      <p>health plan</p>
-      <p> Carrers</p>
+      <h1>Top Insurances</h1>
+      <p>Health Net</p>
+      <p>Health Smart</p>
+      <p>Health Plan</p>
+      <p>Careers</p>
     </div>
     <div>
-      <h1>follow us</h1>
-      <p><i class="fa-brands fa-instagram"></i>
+      <h1>Follow Us</h1>
+      <p>
+        <i class="fa-brands fa-instagram"></i>
         <i class="fa-brands fa-whatsapp"></i>
         <i class="fa-brands fa-facebook"></i>
       </p>
     </div>
   </footer>
+
   <footer class="coppy">
-    <h1>Copyright &#169; eye center by filsan</h1>
+    <h1>Copyright &#169; Eye Center by Filsan</h1>
   </footer>
 </body>
 </html>
